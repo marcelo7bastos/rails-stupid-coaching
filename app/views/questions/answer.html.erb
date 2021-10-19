@@ -1,0 +1,17 @@
+<h1>answer</h1>
+
+<input type="text" 
+       name="question"
+       value="<%= params[:question] %>"
+       question="Ask-me (question)?" 
+       placeholder="Ask me anything? (placeholder)">
+
+<div>  
+  <h2><%= params[:question] %></h2>
+  <h2><%= @answer %></h2>
+</div>
+<% console %>
+
+<div>
+<%= link_to "New Question", ask_path %>
+</div>
